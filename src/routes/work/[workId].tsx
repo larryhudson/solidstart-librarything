@@ -54,9 +54,6 @@ export default function WorkPage() {
                           height="136"
                           loading="lazy"
                         />
-                        <p>
-                          {rec.title} by {rec.author.name}
-                        </p>
                       </A>
                     </li>
                   )}

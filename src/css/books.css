@@ -5,18 +5,19 @@
 
 .book-list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 650px;
   list-style: none;
   padding-left: 0;
   overflow-y: scroll;
 }
 
+.book-list a:hover img {
+  outline: 8px solid hotpink;
+}
+
 .book-list li {
-  width: 120px;
+  width: 90px;
+  padding: 1rem;
 }
 
 .book-list img {
