@@ -1,0 +1,24 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.book-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 700px;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
+}
+
+.book-list li {
+  width: 120px;
+}
+
+.grey-out {
+  filter: grayscale(1);
+}
