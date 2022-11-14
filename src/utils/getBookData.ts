@@ -4,6 +4,8 @@ import cheerio from "cheerio";
 export async function getBookData(workId) {
   const libraryThingUrl = `https://www.librarything.com/work/${workId}`;
 
+  if (workId === "favicon.ico") return null;
+
   console.log({ libraryThingUrl });
 
   const html = await EleventyFetch(libraryThingUrl, {
