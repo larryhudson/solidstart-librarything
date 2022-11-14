@@ -47,7 +47,12 @@ export default function WorkPage() {
                   {(rec) => (
                     <li>
                       <A prefetch="intent" href={rec.url}>
-                        <img src={rec.img_src} loading="lazy" />
+                        <img
+                          src={rec.img_src}
+                          width="90"
+                          height="136"
+                          loading="lazy"
+                        />
                         <p>
                           {rec.title} by {rec.author.name}
                         </p>
