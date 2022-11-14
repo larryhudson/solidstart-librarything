@@ -5,11 +5,11 @@
 
 .book-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 700px;
+  height: 650px;
   list-style: none;
   padding-left: 0;
   overflow-y: scroll;
@@ -17,6 +17,10 @@
 
 .book-list li {
   width: 120px;
+}
+
+.book-list img {
+  background-color: lightgray;
 }
 
 .grey-out {

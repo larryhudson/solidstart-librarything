@@ -1,5 +1,5 @@
 import { For, Show } from "solid-js";
-import { A, useIsRouting, useRouteData } from "solid-start";
+import { A, Title, useIsRouting, useRouteData } from "solid-start";
 import { createServerData$ } from "solid-start/server";
 import { getRecsForWork } from "~/utils/getRecsForWork";
 import { getBookData } from "~/utils/getBookData";
@@ -23,6 +23,7 @@ export default function WorkPage() {
 
   return (
     <div class="container" classList={{ "grey-out": isRouting() }}>
+      <Title>{routeData.book()?.title}</Title>
       <h1>{routeData.book()?.title}</h1>
       <p>
         By{" "}
@@ -65,7 +66,6 @@ export default function WorkPage() {
           )}
         </For>
       </Show>
-      <pre>{JSON.stringify(routeData.recGroups(), null, 2)}</pre>
     </div>
   );
 }
